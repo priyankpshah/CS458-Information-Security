@@ -1,0 +1,42 @@
+		       Information Security::Assignment 2
+**********************************************************************************************
+**********************************************************************************************
+			Name: Priyank P Shah
+			      CWID:A20344797
+**********************************************************************************************
+**********************************************************************************************
+Operation:
+
+1. Enter a number on client program
+2. It will be displayed on the client screen and to the server side.
+3. Same number will be displayed on server side.
+4. This number will be incremented by 1 on server side and sent back to client.
+5. client will display the server response and check if the response is valid or not.
+	*Valid in terms of (Original Number+1).
+
+**********************************************************************************************
+**********************************************************************************************
+
+Instruction to Run Program:
+
+1. Compilation:
+	
+	SServer.cc
+	"gcc -o server sserver.cc -lssl -lcrypto"
+	
+	SClient.cc
+	"gcc -o client sclient.cc -lssl -lcrypto"
+
+2.Run:
+	
+	SServer.cc:
+	"./ server cert.pem key.pem portnum"
+
+	SClient.cc:
+	"./client localhost portnum"
+
+1.Run SServer.cc and enter the pass phrase
+2.Run Client Program
+
+**********************************************************************************************	**********************************************************************************************
+			      End of File
